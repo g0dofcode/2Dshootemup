@@ -9,14 +9,14 @@ function Update ()
 {
 	if (Input.GetKey(moveUp))
 	{
-		rigidbody2D.velocity.y = speed;
+		GetComponent.<Rigidbody2D>().velocity.y = speed;
 	}
 	else if (Input.GetKey(moveDown))
 	{
-		rigidbody2D.velocity.y = speed *-1;
+		GetComponent.<Rigidbody2D>().velocity.y = speed *-1;
 	}
 	else
 	{
-		rigidbody2D.velocity.y = 0;
+		GetComponent.<Rigidbody2D>().velocity.y = 0;
 	}
 }
